@@ -45,4 +45,15 @@ public class person {
 		System.out.println("合計 " + person.count + " 人です");
 	}
 
+	// インスタンスメソッドbuyを定義
+	public void buy(Car car) {
+		car.setOwner(this.fullName());
+		System.out.println(car.getOwner() + "が購入しました");
+	}
+
+	public void buy(Bicycle bicycle) {
+		bicycle.setOwner(this.fullName());
+		System.out.println(bicycle.getOwner() + "が購入しました");
+	}
+
 }
